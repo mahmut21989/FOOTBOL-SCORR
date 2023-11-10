@@ -12,3 +12,11 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
+.button-one {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #6E6D71;
+    color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
