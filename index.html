@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
 </head>
 
 <body onload="myFunction()">
-    <audio id="music3" src="mp3/sampiyon.mp" controls style="display: none">
+    <audio id="music3" src="mp3/sampiyon.mp3" controls style="display: none">
 
 
     </audio>
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="fw-bold fs-2 ">MAÇ BAŞLIYOR... MAHMUT YAZILIM TÜM TAKIMLARA BAŞARILAR DİLER</p>
+                    <p class="fw-bold fs-2 ">MAÇ BAŞLIYOR... MAHMUT YAZILIM TÜM TAKIMLARA BAŞARILAR DİLER...</p>
                 </div>
             </div>
         </div>
@@ -31,17 +31,17 @@
         <div class="container">
             <div class="row justify-content-between ">
                 <div class="col-md-2  team-a">
-                    <div class="d-flex align-items-center justify-content-center ">
-                        <p id="teamName">Galatasaray</p>
-                        <button type="button" class="btn btn-primary" onclick="changeTeamName()">
+                    <div class="d-flex align-items-center justify-content-center gap-4  ">
+                        <p id="teamName" class="fs-2 fw-bold ">Galatasaray</p>
+                        <button type="button" class="btn btn-primary page-button-one" onclick="changeTeamName()">
                             <i class="bi bi-check"></i>
                         </button>
                     </div>
                     <div>
-                        <div>
+                        <div class="fnameInputs">
                             <input type="text" id="fname" name="fname">
                         </div>
-                        <div>
+                        <div class="d-flex align-items-center gap-2 ">
                             <div>
                                 <button type="button" class="btn btn-primary button-one">GOL+1</button>
                                 <audio id="music" controls style="display: none">
@@ -60,7 +60,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="d-flex align-items-center gap-2 mt-3 ">
                             <div>
                                 <button type="button" class="btn btn-primary button-four">GOL+2</button>
                                 <audio id="music" controls style="display: none">
@@ -80,7 +80,7 @@
                         </div>
 
 
-                        <div>
+                        <div class="text-center mt-3">
                             <button type="button" class="btn btn-primary button-three" onclick="promptForGol()"> GOL
                                 SAYISI
 
@@ -90,12 +90,65 @@
                     </div>
                 </div>
 
+
+                              <!-- TAKIM B HTML KISMI BURADAN BAŞLIYOR -->
+
                 <div class="col-md-2 team-b">
-                    <div class="d-flex align-items-center justify-content-center ">
-                        <p id="teamBName">Fenerbahçe</p>
-                        <button type="button" class="btn btn-primary" onclick="changeTeamBName()">
+                    <div class="d-flex align-items-center justify-content-center gap-4 ">
+                        <p id="teamBName" class="fs-2 fw-bold">Fenerbahçe</p>
+                        <button type="button" class="btn btn-primary page-button-one" onclick="changeTeamBName()">
                             <i class="bi bi-check"></i>
                         </button>
+                    </div>
+                    <div>
+                        <div class="pageİnput-box">
+                            <input type="text" id="pageİnput" name="pageİnput">
+                        </div>
+                        <div class="d-flex align-items-center gap-2 ">
+                            <div>
+                                <button type="button" class="btn btn-primary button-six">GOL+1</button>
+                                <audio id="music" controls style="display: none">
+                                    <source src="mp3/GoooooL.mp3" type="audio/mpeg">
+
+                                </audio>
+
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn btn-primary button-seven">GOL-1</button>
+                                <audio id="music-two" controls style="display: none">
+                                    <source src="mp3/sırlar.mp3" type="audio/mpeg">
+
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mt-3 ">
+                            <div>
+                                <button type="button" class="btn btn-primary button-eight">GOL+2</button>
+                                <audio id="music" controls style="display: none">
+                                    <source src="mp3/GoooooL.mp3" type="audio/mpeg">
+
+                                </audio>
+
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn btn-primary button-nine">GOL+3</button>
+                                <audio id="music-two" controls style="display: none">
+                                    <source src="mp3/GoooooL.mp3" type="audio/mpeg">
+
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3 ">
+                            <button type="button" class="btn btn-primary button-eleven" onclick="promptBGol()"> GOL
+                                SAYISI
+
+                            </button>
+
+                        </div>
                     </div>
                 </div>
             </div>

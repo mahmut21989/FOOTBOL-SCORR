@@ -12,11 +12,78 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-.button-one {
+.page-button-one{
+    background-color: black;
+    border-radius: 19px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+
+}
+.fnameInputs{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+#fname,#pageİnput{
+    height: 33px;
+    border-radius: 15px;
+    background-color: darkgray;
+    text-align: center;
+    color: #20211e;
+    font-weight: bold;
+}
+.button-one,.button-two,.button-four,.button-five,.button-three{
     text-align: center;
     padding: 10px 20px;
     background-color: #6E6D71;
     color: #fff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    width: 122px;
+    height: 46px;
+}
+.button-one:hover,
+.button-two:hover,
+.button-three:hover,
+.button-four:hover,
+.button-five:hover {
+  background-color: rgb(185, 152, 152); 
+}
+.team-a{
+    width: 300px;
+    height: 350px;
+    
+}
+
+        /* B TAKIMININ CSS KSIMI */
+
+        
+.pageİnput-box{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.button-six,.button-seven,.button-eight,.button-nine,.button-eleven{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #6E6D71;
+    color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 122px;
+    height: 46px;
+}
+.button-six:hover,
+.button-seven:hover,
+.button-eight:hover,
+.button-nine:hover,
+.button-eleven:hover {
+  background-color: rgb(185, 152, 152); 
+}
+.team-b{
+    width: 300px;
+    height: 350px;
+    
 }
