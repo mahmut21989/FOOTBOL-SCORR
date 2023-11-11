@@ -11,11 +11,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="myFunction()">
+    <audio id="music3" src="mp3/sampiyon.mp" controls style="display: none">
+
+
+    </audio>
 
     <section>
         <div class="container">
             <div class="row">
+                <div class="col">
+                    <p class="fw-bold fs-2 ">MAÇ BAŞLIYOR... MAHMUT YAZILIM TÜM TAKIMLARA BAŞARILAR DİLER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-between ">
                 <div class="col-md-2  team-a">
                     <div class="d-flex align-items-center justify-content-center ">
                         <p id="teamName">Galatasaray</p>
@@ -24,29 +38,64 @@
                         </button>
                     </div>
                     <div>
-                        <input type="text" id="fname" name="fname">
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-primary button-one" >GOL+1</button>
-                        <audio id="music" controls style="display: none">
-                            <source src="mp3/GoooooL.mp3" type="audio/mpeg">
-                            
-                        </audio>
-                    </div>
+                        <div>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div>
+                            <div>
+                                <button type="button" class="btn btn-primary button-one">GOL+1</button>
+                                <audio id="music" controls style="display: none">
+                                    <source src="mp3/GoooooL.mp3" type="audio/mpeg">
 
-                    <div>
-                        <button type="button" class="btn btn-primary button-two" >GOL-1</button>
-                        <audio id="music-two" controls style="display: none">
-                            <source src="mp3/sırlar.mp3" type="audio/mpeg">
-                           
-                        </audio>
-                    </div>
+                                </audio>
 
-                    <div>
-                        <button type="button" class="btn btn-primary button-three" > GOL SAYISI
-                           
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn btn-primary button-two">GOL-1</button>
+                                <audio id="music-two" controls style="display: none">
+                                    <source src="mp3/sırlar.mp3" type="audio/mpeg">
+
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <button type="button" class="btn btn-primary button-four">GOL+2</button>
+                                <audio id="music" controls style="display: none">
+                                    <source src="mp3/GoooooL.mp3" type="audio/mpeg">
+
+                                </audio>
+
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn btn-primary button-five">GOL+3</button>
+                                <audio id="music-two" controls style="display: none">
+                                    <source src="mp3/GoooooL.mp3" type="audio/mpeg">
+
+                                </audio>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <button type="button" class="btn btn-primary button-three" onclick="promptForGol()"> GOL
+                                SAYISI
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 team-b">
+                    <div class="d-flex align-items-center justify-content-center ">
+                        <p id="teamBName">Fenerbahçe</p>
+                        <button type="button" class="btn btn-primary" onclick="changeTeamBName()">
+                            <i class="bi bi-check"></i>
                         </button>
-                       
                     </div>
                 </div>
             </div>
